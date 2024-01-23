@@ -1,0 +1,24 @@
+graphics pipeline explanation
+
+1st phase: VERTEX SHADER
+takes the positions of all the vertices and transforms them
+once all done.
+
+2nd Phase: SHAPE ASSEMBLY
+the shape assembler takes all positions and connects them according to a primitive. 
+Primitive: a shape like a triangle or a point or a line.
+
+3rd Phase: GEOMETRY SHADER
+adds vertices and creates new primitives out of existing primitives (complex, will come back to it later)
+
+4th Phase: RASTERIZTION
+Shapes get transformed into actual pixels (bunch of squares)
+and has no colors.
+
+5th Phase: FRAGMENT SHADER
+adds colors to pixels that depend on lighting or textures or shadows you might have multiple colors on one pixel due to overlapping
+
+Last Phase: Blending
+
+
+
